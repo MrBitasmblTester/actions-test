@@ -1,0 +1,16 @@
+name: Bitasmbl Evaluation
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Run Bitasmbl CLI
+        run: npx bitasmbl evaluate --project=123
