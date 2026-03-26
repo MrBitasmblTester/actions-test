@@ -13,4 +13,4 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Run Bitasmbl CLI
-        run: echo "Hello, World!"
+        run: npx bitasmbl evaluate --project-id=123
