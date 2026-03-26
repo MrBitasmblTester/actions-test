@@ -13,5 +13,5 @@ jobs:
         run: npm install -g github:he1snber8/bitasmbl-cli
 
       - name: Run Bitasmbl
-        run: bitasmbl evaluate --project=123
+        run: bitasmbl evaluate 
 
